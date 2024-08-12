@@ -1,6 +1,4 @@
-# My Django Project
-
-This is a Django project template.
+# Autenticacion y Login
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 ![Django](https://img.shields.io/badge/Django-4.2.x-blue)
@@ -9,12 +7,15 @@ This is a Django project template.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.x-orange)
 ![MySQL](https://img.shields.io/badge/MySQL-5.x-blue)
 
+## Descripción
+Mejorá la seguridad de tu sitio web con esta implementación de un sistema de inicio de sesión simple en Django 4.2
+
 ## Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/my_django_project.git
-    cd my_django_project
+    git clone https://github.com/ALucasE/autenticacion-login-django.git
+    cd autenticacion-login-django
     ```
 
 2. Create and activate a virtual environment:
