@@ -1,0 +1,23 @@
+<!-- HERENCIA DE BASE -->
+{% extends "core/base.html" %}
+
+<!-- TITULO DINAMICO -->
+{% block titulo %} Bienvenido {% endblock titulo %}
+
+<!-- CONTENIDO PRINCIPAL -->
+{% block contenido_principal %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        
+
+    <h1>Geek Electronica</h1>
+    <p class="lead">Nuestra empresa se especializa en la venta de materiales electronicos a los especialistas del rubro. Todos los productos necesarios cuentan con una garantía extendida de GEEK ELECTRONICA, lo que le da la tranquilidad que necesita a la hora de realizar un buen trabajo.</p>
+    <!-- Mensajes del servidor -->
+    {% for message in messages %}
+    <div class="alert alert-dismissible alert-{{ message.tags }}">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        {{message}}
+    </div>
+    {% endfor %}
+    <!-- Mensajes del servidor -->
+</div>
+{% endblock contenido_principal %}

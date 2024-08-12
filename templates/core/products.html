@@ -1,0 +1,18 @@
+<!-- HERENCIA DE BASE -->
+{% extends "core/base.html" %}
+
+<!-- TITULO DINAMICO -->
+{% block titulo %} Bienvenido {% endblock titulo %}
+
+<!-- CONTENIDO PRINCIPAL -->
+{% block contenido_principal %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="py-5 text-center">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-12 mx-auto">
+                <h1 class="fw-light">Listado de Productos</h1>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock contenido_principal %}

@@ -8,7 +8,13 @@
 ![MySQL](https://img.shields.io/badge/MySQL-5.x-blue)
 
 ## Descripción
-Mejorá la seguridad de tu sitio web con esta implementación de un sistema de inicio de sesión simple en Django 4.2
+Mejorá la seguridad de tu sitio web con esta implementación de un sistema de inicio de sesión simple en Django 4.2 con Phyton 3.10
+
+## Dependencias
+crispy-bootstrap5==2024.2
+Django==4.2
+django-crispy-forms==2.3
+python-decouple==3.8
 
 ## Installation
 
@@ -29,21 +35,39 @@ Mejorá la seguridad de tu sitio web con esta implementación de un sistema de i
     pip install -r requirements.txt
     ```
 
-
-4. Create extra folders:
-    ```ps
-    "static\css", "static\js", "static\img", "templates", "media" | %{New-Item -Name “$_” -ItemType “Directory”}
-    ```
-
-    ```bach
-    mkdir -p ./{templates,media,static/{css,js,img}}
-    ```
-
-5. Run the development server:
+4. Run the development server:
     ```sh
     python manage.py runserver
     ```
 
+## Esta app usa Crispy forms bootstrap5
+
+[GitHub](https://github.com/django-crispy-forms/crispy-bootstrap5)
+
+settings.py
+```bash
+pip install crispy-bootstrap5
+```
+
+
+settings.py
+```py
+INSTALLED_APPS = (
+    'crispy_forms',
+    'crispy_bootstrap5',
+)
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+```
+
+Template
+```html
+{% load crispy_forms_tags %}
+
+{{ form | crispy }}
+```
 
 ## License
 
